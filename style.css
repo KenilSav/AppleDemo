@@ -1,0 +1,561 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('fonts/SF-Pro-Text-Semibold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+
+.whole {
+    width: 100%;
+    max-width: 100vw;
+    /* Set a maximum width */
+    overflow-x: hidden;
+}
+
+/* Other styles remain unchanged */
+
+
+.navbar {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 40px;
+
+}
+
+.navbar span {
+    font-size: small;
+    cursor: pointer;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: all 2s ease;
+    background-color: blue;
+    position: relative;
+}
+
+.line p {
+    font-size: 15px;
+}
+
+.line p a {
+    color: #06A;
+    text-decoration: none;
+}
+
+.line p a:hover {
+    text-decoration: underline;
+}
+
+.row {
+    margin: 60px auto;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+}
+
+.row .left_part {
+    width: 80vw;
+    margin-left: auto;
+
+}
+
+.row .left_part p {
+    font-size: 49px;
+    letter-spacing: -4px;
+    font-family: "Myfont";
+}
+
+.row .right_part {
+    flex-direction: column;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 80vw;
+    gap: 10px;
+}
+
+.specialist {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 5px;
+}
+
+
+.data1 p {
+    font-size: 15px;
+}
+
+.data1 a {
+    color: #06A;
+    text-decoration: none;
+}
+
+.data1 a:hover {
+
+    text-decoration: underline;
+}
+
+.nearstore {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 5px;
+}
+
+.data2 {
+    margin: 0px 3px;
+}
+
+.data2 a {
+    color: #06A;
+    text-decoration: none;
+}
+
+.data2 a:hover {
+
+    text-decoration: underline;
+}
+
+.items {
+    margin-left: 150px;
+    padding: 25px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+}
+
+.box {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    width: 130px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 22px;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.box a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.box a:hover {
+    text-decoration: underline;
+}
+
+.items .box img {
+    width: 100px;
+}
+
+.paraText {
+    height: 70px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.paraText p {
+    font-weight: bold;
+    left: 10%;
+    position: absolute;
+    font-size: 26px;
+}
+
+
+.headCardClass {
+    padding: 25px;
+}
+
+
+
+.cards {
+    scroll-behavior: smooth;
+    /* width: 78vw; */
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: auto;
+    gap: 15px;
+    overflow-x: scroll;
+    padding: 15px;
+
+}
+
+#firstCard {
+    margin-left: 150px;
+    background-image: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-macbook-air-202402?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1707259289595);
+    background-position: center;
+    background-size: cover;
+}
+#secondCard{
+    background-image: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-iphone-15-pro-202309?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1692910040844);
+    background-position: center;
+    background-size: cover;
+}
+#card3{
+    background-image: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-watch-s9-202309_GEO_IN?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=1693501324197);
+    background-position: center;
+    background-size: cover;
+}
+#card4{
+    background-image: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-ipad-202310_GEO_IN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1696875268001);
+    background-position: center;
+    background-size: cover;
+}
+#card5{
+    background-image: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-iphone-15-202309?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1692719973220);
+    background-position: center;
+    background-size: cover;
+}
+#card6{
+    background-image: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-macbook-pro-202310?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1696964122967);
+    background-position: center;
+    background-size: cover;
+
+}
+.card_items {
+    height: 69vh;
+    width: 25vw;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: auto;
+    cursor: pointer;
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+    padding: 25px;
+    border-radius: 15px;
+    min-width: 25%;
+    max-width: 100%;
+    transition: 0.5s all ease-in-out;
+
+}
+
+.card_items:hover {
+
+    -webkit-box-shadow: 0px 2px 38px 9px rgba(156, 156, 156, 0.74);
+    -moz-box-shadow: 0px 2px 38px 9px rgba(156, 156, 156, 0.74);
+    /* transform: scale(1.05);  */
+    box-shadow: 0px 2px 38px 9px rgba(156, 156, 156, 0.74);
+    height: 69.5vh;
+    width: 25.5vw;
+}
+
+
+.card_items img {
+    height: 80%;
+    width: 100%;
+}
+
+.card2 p {
+    color: rgb(255, 255, 255);
+}
+
+.card2 h3 {
+    color: rgb(255, 255, 255);
+}
+
+.buttons {
+
+    width: 80%;
+    position: absolute;
+    display: flex;
+    /* display: none; */
+    /* left: 15%; */
+    align-items: center;
+    justify-content: center;
+
+}
+
+#scrollLeft {
+    position: absolute;
+    left: 0px;
+    cursor: pointer;
+
+}
+
+#scrollLeft:hover img {
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+    transition: 1s all ease-out;
+    /* Add the background properties for hover effect */
+    background-color: rgba(225, 222, 222, 0.5);
+    /* Semi-transparent background */
+    box-shadow: 0 0 10px rgba(225, 222, 222, 0.5);
+    /* Box shadow effect */
+}
+
+
+#scrollRight {
+    position: relative;
+    left: 67%;
+    cursor: pointer;
+}
+
+#scrollRight:hover img {
+    /* background-color: rgb(225, 222, 222); */
+
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+    transition: 1s all ease-out;
+}
+
+.firstCard {
+    background-image: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-50-specialist-help-202309?wid=960&hei=1000&fmt=jpeg&qlt=90&.v=1701194078821);
+    background-position: center;
+    background-size: cover;
+}
+
+.secondCard {
+    background-image: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-business-202209_GEO_IN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1661285670376 );
+    background-position: center;
+    background-size: cover;
+}
+
+.thirdCard {
+    background-image: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-50-TAA-202310?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1697149577145);
+    background-position: center;
+    background-size: cover;
+}
+
+.fourthCard {
+    background-image: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-card-50-personal-session-202109?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1630612234000);
+    background-position: center;
+    background-size: cover;
+}
+
+#leftScroll {
+    position: absolute;
+    left: 0px;
+    cursor: pointer;
+}
+
+
+#leftScroll:hover img {
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+    transition: 1s all ease-out;
+    /* Add the background properties for hover effect */
+    background-color: rgba(225, 222, 222, 0.5);
+    /* Semi-transparent background */
+    box-shadow: 0 0 10px rgba(225, 222, 222, 0.5);
+    /* Box shadow effect */
+}
+
+#rightScroll {
+    position: relative;
+    left: 67%;
+    cursor: pointer;
+}
+
+#rightScroll:hover img {
+    /* background-color: rgb(225, 222, 222); */
+
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+    transition: 1s all ease-out;
+}
+
+.fifthCard {
+    background-image: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/apple-support-app-202308_GEO_IN?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1691156993472);
+    background-position: center;
+    background-size: cover;
+    width: 30vw;
+}
+
+.fifthCard:hover {
+    width: 30.5vw;
+    padding: 25px;
+}
+
+.videoPlay {
+    height: 50px;
+    left: -25px;
+    top: 83.7%;
+    width: 120%;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+#scrollLeft:hover img,
+#scrollRight:hover img,
+#leftScroll:hover img,
+#rightScroll:hover img {
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+    transition: 0.5s all ease-out;
+    background-color: rgba(225, 222, 222, 0.5);
+    /* Semi-transparent background */
+    box-shadow: 0 0 10px rgba(225, 222, 222, 0.5);
+    /* Box shadow effect */
+}
+
+/* Adjusting styles for better visibility on dark backgrounds */
+#scrollLeft:hover img,
+#scrollRight:hover img,
+#leftScroll:hover img,
+#rightScroll:hover img {
+    filter: brightness(1.5);
+    /* Increase brightness */
+}
+
+/* Additional styles to enhance visibility */
+#scrollLeft,
+#scrollRight,
+#leftScroll,
+#rightScroll {
+    z-index: 1;
+    /* Ensure buttons are above other content */
+}
+
+@media (max-width: 1440px) {
+    .items {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        gap: 28px;
+    }
+
+    .card_items {
+        width: 38.5vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar span:not(:first-child):not(:nth-last-child(-n+2)):not(:last-child) {
+        display: none;
+
+    }
+
+    .buttons {
+        width: 72%;
+    }
+    
+    .line p {
+        font-size: 12px;
+    }
+
+    .row {
+        gap: 51px;
+    }
+
+    .row .left_part p {
+        font-size: 37px;
+        letter-spacing: -4px;
+        font-family: "Myfont";
+    }
+
+    .specialist {
+
+        gap: 23px;
+    }
+
+    .nearstore {
+        gap: 23px;
+    }
+
+    .card_items {
+        width: 74.5vw;
+    }
+    .card_items:hover {
+        -webkit-box-shadow: 0px 2px 38px 9px rgba(156, 156, 156, 0.74);
+        -moz-box-shadow: 0px 2px 38px 9px rgba(156, 156, 156, 0.74);
+        /* transform: scale(1.05); */
+        box-shadow: 0px 2px 38px 9px rgba(156, 156, 156, 0.74);
+        height: 69.5vh;
+        width: 73%;
+    }
+    #firstCard{
+        margin-left: 30px;
+    }
+    .firstCard{
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 320px){
+    .row .left_part p {
+        font-size: 28px;
+        letter-spacing: -4px;
+        font-family: "Myfont";
+    }
+    .data1 p {
+        font-size: 12px;
+    }
+    .data1 a {
+        color: #06A;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    .data2 p{
+        font-size: 12px;
+        
+    }
+    .data2 a {
+        color: #06A;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    .specialist {
+        gap: 8px;
+    }
+    .nearstore {
+        gap: 8px;
+    }
+
+    .items {
+        margin-left: 20px;
+        padding: 0px;
+      
+    }
+    .box{
+        padding: 0px;
+        height: 135px;
+
+    }
+    .paraText p{
+        font-size: 23px;
+    }
+    .card_items {
+        height: 55vh;
+    }
+}
